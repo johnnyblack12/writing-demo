@@ -132,10 +132,8 @@ body {
   }
     
   .image1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
+    margin: 75px 0 25px;
+    width: 25vw;
     height: auto;
   }
   
