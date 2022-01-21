@@ -8,16 +8,16 @@
     <meta property="og:image" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Righteous&display=swap&family=Poppins&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Righteous&display=swap&family=Poppins&display=swap&family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/main.css" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Fight News"
     />
-    <title>Template</title>
+    <title>FIGHT NEWS</title>
     <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -26,11 +26,60 @@
       <a class="navitem" href="./index.html">Home</a>
     </div>
     <img class="image1" src="https://pbs.twimg.com/media/FCafg1RVgAEcPzM?format=jpg&name=medium">
+    <h1 style="font-family: Montserrat; margin: 10px 5px;">UFC 270: Weighing the Records of the Top Heavyweights</h1>
+    <div class="author">
+      <img class="headshot" src="./John Febbo Profile.jpg">
+      <h2 class="author">John Febbo</h2>
+      <p class="date">January 20, 2022</p>
+    <div class="text">
+    <p>The first UFC PPV of 2022 is just days away, keeping the hearts of fight fans around the world at an elevated pace. When two men built like superheroes are set to 
+      face off inside a cage, a first-time viewer is just as captivated as the MMA die-hard.</p>
+    <p>It can be hard to resist trying to pick a winner with such an even matchup on paper. France's Ciryl Gane fights with a kickboxing style that is strikingly 
+      fast and fluid for a heavyweight near the 265 lb limit. He is coming off a round 3 TKO victory over Derrick Lewis, who was ranked 3rd in the division at the time.
+      Holding a glimmering 7-0 record to start his UFC career, Gane appears destined for gold around his waist. It is almost cinematic that his final obstacle 
+      on that path takes the form of Cameroon's Francis Ngannou. Ngannou, who now resides full-time in Las Vegas, started his UFC career with a perfect 6-0 record, all 
+      by finish, only to have his meteoric rise rerouted back down to Earth by then-champion Stipe Miocic in eary 2018.</p>
+    <p>Adding to the drama is the fact that Francis Ngannou achieved his hot start while training at the MMA Factory in Paris, France under the
+      guise of Fernand Lopez, Ciryl Gane's current trainer and coach. Ngannou now trains with coach Eric Nicksick at former heavyweight champion Randy Couture's gym,
+      Xtreme Couture MMA in Las Vegas.</p>
+    <p>After that lopsided unanimous decision loss in the title shot against Miocic, Ngannou lost another decision in a close but notoriously boring fight with the aforementioned 
+      Derrick Lewis. He then put together four straight first round knockout performances against top contenders and former champions, which thrust him back into a title shot with
+      Miocic in March, 2021. This time, Ngannou featured a new patient style and vastly improved defense, which set him up for vicious offense that knocked Miocic out cold in the 
+      2nd round.</p>
+    <p>Standing in the middle of the octagon with that shiny strap around his waist and an 11-2 UFC record, everyone was certain this belt would not leave the waist of "The Predator" for a
+      very long time. Ciryl "Bon Gamin" Gane's 2021 cast some doubt.</p>
+    <h2>The Numbers</h2>
+    <p>In parallel with Francis Ngannou's first title shot back at UFC 220, the betting market views Ciryl Gane as a running freight train that cannot be stopped. BetMGM sportsbook
+      has Gane as a -150 favorite heading into fight weekend, similar to how Ngannou's line ended at -190 in his first fight against Stipe Miocic. Back then, the champion in his prime defended his title
+      against the rising star. Will UFC 270 be a modern remake of that classic battle?</p>
+    <p>Fights can be particularly hard to judge when disparity exists between the size of each athlete's body of work and level of competition, as is the case for our UFC 270 headliners.
+      One useful metric in this case is <i>dominance rating</i>, which grades a fighter's body of work fight-by-fight based on method of victory, dominance of the fighter or opponent 
+      in that victory, and opponent's ranking at the time of the fight. Scores are evenly distributed around zero, with values between 0 - 1 indicating above-average success, above 1 elite 
+      success, and the reverse being true for below-average fighters on the negative side.</p>
+    <p>Let's take a look at the dominance of Ngannou and Gane's careers thus far:</p>
+    <h3>Cumulative Dominance Rating</h3>
+    <canvas id="chart1" style="width: 100%"></canvas>
+    <p><i>But Ngannou has been fighting 4 more years than Gane. This isn't fair!</i></p>
+    <p>While the numbers say Gane's short career has been elite thus far, this is not a fair comparison and not very useful for predicting the fight. Let's simulate Gane's success from here
+      by normalizing his body of work at his current rate of success to one as substantial as Ngannou's:</p>
+    <h3>Comparative Dominance Rating</h3>
+    <canvas id="chart2" style="width: 100%"></canvas>
+    <p>OK, so all we did was take Gane's 7 fights, make them proportional to Ngannou's 13, and expand Gane's body of work in a linear fashion. It doesn't look natural because it is a projection and 
+      not organic results, but that linear slope is critical. That is the rate at which Gane dominates opponents and climbs the rankings. At this rate, it does not appear Gane is good enough to defeat
+      Ngannou, but he is not far off. In his last fight, Ngannou finished the then-champion very early in a 5 round fight, granting him a huge leap in dominance rating. He dominated the champion after all. 
+      If Ngannou only won by decision or even lost the fight, his and Gane's ratings would be a lot closer or have intersected, projecting Gane the winner.</p>
+    <p>The champion's comparative dominance rating of 4.587 is about double Gane's 2.318. This has us projecting Ngannou with a 66% chance to win to Gane's 34%, and our bet would be Francis Ngannou at any
+      odds better than -197 or a 2:1 favorite. Given the current market odds with Gane as the favorite, we see great value betting on the champ.</p>
+    <p>Fighting is far more personal than team sports. Aside from fighters getting personal with each other via fists to the face, fighters regularly expose both their bodies and minds
+      to the fans via weigh-ins, faceoffs, and media days, and they have more freedom than other athletes to act out on TV and social media. Scoring fights in your mind like a judge sitting
+      octagon-side is the only surefire way to assess a fighter's strengths and weaknesses. However, the excitement of fighting has many fans, bettors, and those of us who identify as both 
+      overlooking talent for appearance, attitude, and flash. Such factors can be guilty of skewing betting lines, but a little math can help us demystify where true talent and value lie.</p>
+    </div>
+    </div>
     <div class="footer" id="footer">
       <p>Lorem Ipsum</p>
       <p>Dolor &bull; Sit Amet</p>
     </div>
-    <script src="./js/universal.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

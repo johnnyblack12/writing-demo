@@ -3,8 +3,6 @@ body {
     font-family: 'Poppins';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 24px;
-    line-height: 30px;
     text-align: center;
     background-color: whitesmoke;
     color: #222;
@@ -52,7 +50,8 @@ body {
     float: right;
   }
   
-  .footer {
+  /* Content less than full page */
+  /* .footer {
     position: absolute;
     bottom: 0;
     height: auto;
@@ -63,63 +62,23 @@ body {
     font-size: 16px;
     line-height: 20px;
     padding: 10px 0 5px;
-  }
-  
-  .x-button {
-    float: right;
-    height: 16px;
-    width: 16px;
-    background-color: #222;
-    color: whitesmoke;
+  } */
+
+  .footer {
+    height: auto;
+    width: 100vw;
+    margin: 50px 0 0;
     text-align: center;
-    font-weight: bold;
-    border: solid 2px #222;
+    background-color: gainsboro;
+    color: #444;
     font-size: 16px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: default;
-  }
-  
-  .submit-button {
-    background-color: #222;
-    color: whitesmoke;
-    border: solid 2px #222;
-    font-size: 16px;
-    padding: 0 5px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    margin: 5px 10px;
-    border-radius: 20px;
-    box-shadow: 0px 2px 4px #444;
-    float: right;
-    cursor: pointer;
-  }
-  
-  .link {
-    color: #222;
-    cursor: pointer;
+    line-height: 20px;
+    padding: 10px 0 5px;
   }
   
   @media(hover: hover) and (pointer: fine) {
     .navheader:hover, .navitem:hover {
       text-decoration: underline;
-    }
-    
-    .x-button:hover, .submit-button:hover {
-        background-color: whitesmoke;
-        color: #222;
-    }
-  
-    .x-button:active, .submit-button:active {
-        transform:scale(0.9);
-    }
-  
-    .link:hover, .wait:hover {
-        color: #555;
-    }
-  
-    .thumbnail:hover {
-        filter:hue-rotate(-90deg);
     }
   }
   
@@ -132,35 +91,42 @@ body {
   }
     
   .image1 {
-    margin: 75px 0 25px;
-    width: 25vw;
-    height: auto;
+    margin: 75px 0 0;
+    width: auto;
+    height: 30vh;
+  }
+
+  .author {
+    font-family: 'Montserrat';
+    display: inline-block;
+    margin: 0 auto 0 10px;
+    vertical-align: super
+  }
+
+  .date {
+    display: inline-block;
+    font-size: 1em;
+    color: #666;
+    margin: 0 auto 0 10px;
+    vertical-align: super
+  }
+
+  .headshot {
+    height: 3em;
+    width: auto;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .text {
+    max-width: 1000px;
+    width: 90vw;
+    font-family: 'Roboto';
+    text-align: justify;
+    line-height: 1.5em;
   }
   
-  .collapse-button {
-    position: absolute;
-    color: whitesmoke;
-    font-size: 200px;
-    text-shadow: 0px 0px 4px #222;
-    top: 90%;
-    left: 50%;
-    transform: rotate(90deg);
-    cursor: pointer;
-  }
-  
-  .address1 {
-    font-size: 36px;
-    margin: 70px auto 0 auto;
-    line-height: 40px;
-    
-  }
-  
-  .address2 {
-    font-size: 28px;
-    margin: 10px auto 0 auto;
-    line-height: 32px;
-    
-  }
   
   .bar {
     
@@ -170,256 +136,3 @@ body {
     height: 5px;
     margin: 20px auto;
   }
-  
-  .image2 {
-    
-    margin: 0 auto;
-    width: 90vw;
-    max-width: 900px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 2px 8px #444;
-  }
-  
-  .menu {
-    
-    margin: 20px auto;
-    width: 70vw;
-    max-width: 700px;
-    height: auto;
-    text-align: left;
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  }
-  
-  .menu p {
-    display: inline-block;
-    margin: 0 10px;
-    text-align: left;
-    cursor: pointer;
-  }
-  
-  .menu-arrow {
-    font-size: 60px;
-    font-weight: bold;
-    vertical-align: bottom;
-    color: #222;
-    transition: transform 0.2s;
-    transform: rotate(90deg);
-  }
-  
-  .menu-arrow-rotate {
-    transform: rotate(90deg);
-    color: goldenrod;
-  }
-  
-  .menu-arrow-rotated {
-    transform: rotate(270deg);
-  }
-  
-  .menu-text {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 24px;
-    color: #222;
-    
-  }
-  
-  .tour-link {
-    
-    margin: 0 auto 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px #444;
-  }
-  
-  .drop-down {
-    
-    margin: 0 auto;
-    padding: 10px;
-    text-align: center;
-    height: auto;  
-  }
-  
-  .image {
-    display: block;
-    margin: 0 auto 20px;
-    width: 80vw;
-    max-width: 800px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0px 2px 8px #444;
-    transition: height 0.3s linear;
-    transition: width 0.3s linear;
-  }
-  
-  .fact-table {
-    
-    margin: 0 auto 20px;
-    padding: 10px 0;
-    width: 90vw;
-    max-width: 400px;
-    height: auto;
-    background-color: #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px #444;
-    font-size: 16px;
-  }
-  
-  .fact-table h2 {
-    margin: 10px auto;
-  }
-  
-  .little-bar {
-    background: linear-gradient(to right, #ddd, #222 10%, #222 90%, #ddd);
-    width: 90%;
-    height: 3px;
-    margin: 5px auto;
-  }
-  
-  .table-row-1 {
-    width: 100%;
-    height: 36px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-  }
-  
-  .table-row-1 h4, .table-row-1 p {
-    display: inline-block;
-    width: 70px;
-    margin: 5px 10px;
-  }
-  
-  .table-row {
-    width: auto;
-    height: 36px;
-    text-align: left;
-  }
-  
-  .table-row h4, .table-row p{
-    display: inline-block;
-    width: 140px;
-    margin: 5px auto 5px 10%;
-  }
-  
-  .form-container {
-    
-  }
-  
-  .form-instructions {
-    margin: 10px auto;
-    text-align: left;
-    width: 90vw;
-    max-width: 700px;
-    font-size: 18px;
-  }
-  
-  .form-box {
-    display: flex;
-    width: 90vw;
-    max-width: 900px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-    color: #222;
-    justify-content: space-evenly;
-  }
-  
-  .image3 {
-    height: 390px;
-    width: auto;
-    border-radius: 5px;
-    margin: 10px 0;
-    box-shadow: 0px 2px 8px #444;
-  }
-  
-  .contact-form {
-    width: 230px;
-    min-height: 250px;
-    height: auto;
-    border: solid 5px #222;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: whitesmoke;
-    color: #222;
-    box-shadow: 0px 2px 4px #444;
-    font-size: 16px;
-    line-height: 30px;
-    text-align: left;
-  }
-  
-  .contact-field {
-    display: inline-block;
-    border: solid 1px #222;
-    border-radius: 3px;
-    width: 130px;
-    height: 20px;
-    margin: 10px;
-    background-color: whitesmoke;
-    color: #222;
-    font-size: 14px;
-    font-family: 'Roboto', Arial, sans-serif;
-  }
-  
-  .phone-format {
-    display: inline-block;
-    font-size: 12px;
-    line-height: 14px;
-  }
-  
-  .dateTime input {
-    margin: 10px;
-  
-  }
-  
-  .message-box {
-    
-    border: solid 2px #222;
-    border-radius: 10px;
-    width: 200px;
-    margin: 50px auto 10px;
-    padding: 5px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-  
-  .message-collapse {
-    float: right;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 5px;
-    cursor: default;
-    transform: rotate(90deg);
-  }
-  
-  .disclaimer {
-    color: #444;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: left;
-    width: 90vw;
-    max-width: 700px;
-    padding: 10px;
-    margin: 0 auto;
-  }
-  
-  @media(hover: hover) and (pointer: fine) {
-    .form-text a:hover {
-      background-color: #222;
-      color: whitesmoke;
-    }
-  
-    .collapse-button:hover, .message-collapse:hover {
-      transform: rotate(90deg) scale(1.2);
-    }
-  
-    .focus-x:hover {
-      background-color: #222;
-      color: whitesmoke;
-  }
-  
-  .focus-x:active {
-      transform:scale(0.9);
-  }
-  }
-  
